@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.Toast;
 
 import com.AbhishekKangeProductions.mhtcetclassroom.Adapters.availableToChatAdapter;
 import com.AbhishekKangeProductions.mhtcetclassroom.Models.availableToChatModel;
@@ -60,6 +61,7 @@ public class availableToChat extends AppCompatActivity {
         availableToChatAdapter adapter = new availableToChatAdapter(list,getApplicationContext());
 
         availableToChatRv.setAdapter(adapter);
+
 
         //Adapter
 
