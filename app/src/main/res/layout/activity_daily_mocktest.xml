@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".newActivities.dailyMocktestActivity">
+
+    <TextView
+        android:id="@+id/nextTestTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/debangafont"
+        android:background="#DADADA"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/livetestFragBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:fontFamily="@font/debangafont"
+            android:padding="15dp"
+            android:text="Live Test" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/liveTestLeaderboardFragBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:fontFamily="@font/debangafont"
+            android:padding="15dp"
+            android:text="LeaderBoard" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/dailyMockTestFrame"
+        android:layout_width="413dp"
+        android:layout_height="604dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        app:layout_constraintVertical_bias="1.0">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

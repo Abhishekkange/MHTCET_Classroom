@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.feedbackus">
+
+    <TextView
+        android:id="@+id/feedbacktext"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:text="FEEDBACK US"
+        android:background="@drawable/optionback"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/debangafont"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="295dp"
+        android:layout_height="130dp"
+        android:background="@drawable/optionback"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:gravity="start"
+        android:hint="Enter your FeedBack Here"
+        android:inputType="textPersonName"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/feedbacktext"
+        app:layout_constraintStart_toStartOf="@+id/feedbacktext"
+        app:layout_constraintTop_toBottomOf="@+id/feedbacktext"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <Button
+        android:id="@+id/feedbacksend"
+        android:layout_width="299dp"
+        android:layout_height="55dp"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+
+    <LinearLayout
+        android:id="@+id/Banner7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedbacksend"
+        app:layout_constraintVertical_bias="0.467"></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

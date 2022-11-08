@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.AbhishekKangeProductions.mhtcetclassroom">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MhtCetFinal">
+        <activity android:name=".newActivities.forgotPassword"></activity>
+        <activity android:name=".newActivities.updateYourProfile" />
+        <activity android:name=".newActivities.viewPhotoActivity" />
+        <activity android:name=".newActivities.fullAnnouncmentActivity" />
+        <activity android:name=".newActivities.othersProfileActivity" />
+        <activity android:name=".newActivities.dailyMocktestResultActivity" />
+        <activity android:name=".newActivities.dataCollection1" />
+        <activity android:name=".newActivities.dailyMockTestLayout" />
+        <activity android:name=".newActivities.settingsActivity" />
+        <activity android:name=".newActivities.createPostActivity" />
+        <activity android:name=".newActivities.mockTestChapterWiseActivity" />
+        <activity android:name=".newActivities.newChattingActivity" />
+        <activity android:name=".newActivities.dailyMocktestActivity" />
+        <activity android:name=".newFragments.newHomeFragment" />
+        <activity android:name=".newActivities.newMainActivity" />
+        <activity android:name=".freeCallActivity" />
+        <activity android:name=".newActivities.bookbuydetailsActivity" />
+        <activity android:name=".newActivities.buybooksActivity" />
+        <activity android:name=".newActivities.viewFormulaActivity" />
+        <activity android:name=".cardviewActivities.formulaSheetActivity" />
+        <activity android:name=".newActivities.availableToChat" />
+        <activity android:name=".cardviewActivities.personalChatActivity" />
+        <activity android:name=".navigationDrawerActivity" />
+        <activity android:name=".mysplashScreen" />
+        <activity android:name="com.AbhishekKangeProductions.personalChatFragment" />
+        <activity android:name=".cardviewActivities.chattingActivity" />
+        <activity android:name=".uploadProfilePictureActivity" />
+        <activity android:name=".studentProfileActivity" />
+        <activity android:name=".rateUsActivity" />
+        <activity android:name=".referAndEarnActivity" />
+        <activity android:name=".downloadedBooksActivity" />
+        <activity android:name=".performanceActivity" />
+        <activity android:name=".userprofiile2" />
+        <activity android:name=".cardviewActivities.VideoCallingActivity" />
+        <activity
+            android:name=".signInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".signupActivity" />
+        <activity android:name=".cardviewActivities.doubtanddiscussion" />
+        <activity android:name=".cardviewActivities.groupStudyActivity" />
+        <activity android:name=".cardviewActivities.generateMoreCoins" />
+        <activity android:name=".cardviewActivities.doubtDiscussion" />
+        <activity android:name=".SocialMediaFiles.MainPage" />
+        <activity android:name=".socialMediaWelcome" />
+        <activity android:name=".leaderboardActivity" />
+        <activity android:name=".studentProfile" />
+        <activity android:name=".studentDetailsActivity" />
+        <activity
+            android:name=".registerActivity"
+            android:exported="true" />
+        <activity android:name=".starting" />
+        <activity android:name=".optiongenerate" />
+        <activity android:name=".myself" />
+        <activity
+            android:name=".collegeReviewData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pdfReaderActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".fragments.feedbackus" />
+        <activity
+            android:name=".instructions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listOfTests"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".testList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cardviewActivities.testLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PdfReader"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cardviewActivities.handwrittenNotes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cardviewActivities.CollegeReviews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cardviewActivities.practicePapers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cardviewActivities.announcment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cardviewActivities.testSeries"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cardviewActivities.previousYearspapers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7496362748387980~1940185949" />
+    </application>
+
+</manifest>

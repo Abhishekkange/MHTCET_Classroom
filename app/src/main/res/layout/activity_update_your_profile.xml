@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FCE7C8"
+    android:layout_height="match_parent"
+    tools:context=".newActivities.updateYourProfile">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/updateProfileHere"
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="48dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/girlprofileicon"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <EditText
+                android:id="@+id/updateEnterName"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#4C4C4C"
+                android:textColor="@color/black"
+                android:background="@drawable/optionback"
+                android:hint="Enter Your Name"
+                android:inputType="textPersonName"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/updateAge"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/optionback"
+                android:hint="Enter your Age"
+                android:inputType="number"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/updateBirthday"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/optionback"
+                android:hint="Enter Your Birth date"
+                android:inputType="date"
+                android:padding="14dp"
+                android:textColorHint="#4C4C4C" />
+
+            <EditText
+                android:id="@+id/updateGender"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="#4C4C4C"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/optionback"
+                android:hint="Enter Gender"
+                android:inputType="textPersonName"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/updateMobileNumber"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/optionback"
+                android:hint="Enter Mobile number"
+                android:inputType="number"
+                android:padding="14dp" />
+
+
+            <EditText
+                android:id="@+id/updateInfo"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#4C4C4C"
+                android:textColor="@color/black"
+                android:background="@drawable/optionback"
+                android:hint="Tell us about yourself"
+                android:inputType="textPersonName"
+                android:padding="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:background="#FF6256"
+                android:padding="15dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/debangafont"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:text="update Profile" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

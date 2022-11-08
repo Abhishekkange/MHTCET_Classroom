@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".collegeReviewData">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:padding="10dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/collegeImageD"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="396dp"
+        android:layout_height="455dp"
+      android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:textColor="@color/black"
+                android:text="College Name" />
+
+            <TextView
+                android:id="@+id/collegeNameD"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:background="@drawable/optionback"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView3456"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:textColor="@color/black"
+                android:text="Desciption" />
+
+            <TextView
+                android:id="@+id/collegeDescription"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:background="@drawable/optionback"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <TextView
+                android:id="@+id/textView131"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:textColor="@color/black"
+                android:text="CSE closing  Rank" />
+            <TextView
+                android:id="@+id/closingRank"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:textColor="@color/black"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView13145"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:textColor="@color/black"
+                android:text="Location" />
+            <TextView
+                android:id="@+id/Location"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:textColor="@color/black"
+                android:text="" />
+            <TextView
+                android:id="@+id/textView133"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:textColor="@color/black"
+                android:text="Fees" />
+            <TextView
+                android:id="@+id/fees"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:textColor="@color/black"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView135"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:padding="15dp"
+                android:text="AVG. CTC"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/averagePackage"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:textColor="@color/black"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/av"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:textColor="@color/black"
+                android:text=" NIRF Ranking" />
+            <TextView
+                android:id="@+id/ranking"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:textColor="@color/black"
+                android:text="" />
+
+
+
+            <TextView
+                android:id="@+id/campuss"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:textColor="@color/black"
+                android:text=" Campus Size" />
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewrev1"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="MEDIUM_RECTANGLE"
+                ads:adUnitId="ca-app-pub-7496362748387980/4324490918">
+            </com.google.android.gms.ads.AdView>
+            <TextView
+                android:id="@+id/campusSize"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:textColor="@color/black"
+                android:text="" />
+
+
+
+            <TextView
+                android:id="@+id/textView134355"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:padding="15dp"
+                android:text="Infrastructure rating"
+                android:textColor="@color/black" />
+           <ImageView
+               android:id="@+id/infrastructureRating"
+               android:layout_width="300dp"
+               android:layout_gravity="center"
+               android:layout_margin="10dp"
+               android:src="@drawable/profile"
+               android:layout_height="50dp"
+               />
+            <TextView
+                android:id="@+id/textView13455"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:padding="15dp"
+                android:text="Faculty Rating "
+                android:textColor="@color/black" />
+            <ImageView
+                android:id="@+id/facultyRating"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/profile"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:id="@+id/textView13d455"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/optionback"
+                android:fontFamily="@font/lemonbold"
+                android:padding="15dp"
+                android:text="Overall College Rating"
+                android:textColor="@color/black" />
+            <ImageView
+                android:id="@+id/overallCollegerating"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/profile"
+                android:layout_height="50dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lemonbold"
+                android:textColor="@color/black"
+                android:text="Student Feedback About College" />
+
+            <Button
+                android:id="@+id/revirewCollegeBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemonbold"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:text="Review this college " />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/studentFeed"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

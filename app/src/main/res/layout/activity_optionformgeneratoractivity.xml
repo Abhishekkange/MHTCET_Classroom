@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".optionformgeneratoractivity">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="337dp"
+        android:layout_height="62dp"
+        android:text="option form generator"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lemonbold"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="348dp"
+        android:layout_height="505dp"
+        android:layout_gravity="center"
+        android:background="@drawable/optionback"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:gravity="start"
+        android:text="This option form generator is in development mode. Once it is complete you can easily create your option form within few minutes with great accuracy. you have to enter your percentile , rank , your caste , and other necessary details and you will get a list of college with order, then you can select the college you want and you get a complete list of college that you have to fill in the option form .Stay tuned for this , its coming soon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

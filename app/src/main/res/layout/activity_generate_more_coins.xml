@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".cardviewActivities.generateMoreCoins" >
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/robotomed"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/category_back"
+        android:text="Watch video and earn coins" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/watchVideoAndEarn"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:background="@color/DeepYellow"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lemonbold"
+        android:layout_height="wrap_content"
+        android:text="watch video" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_height="4dp" />
+</LinearLayout>

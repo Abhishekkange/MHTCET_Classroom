@@ -1,0 +1,6 @@
+include ':myunity'
+include ':unity-ads'
+include ':ads'
+include ':unity-ads'
+include ':app'
+rootProject.name = "Mht cet final"

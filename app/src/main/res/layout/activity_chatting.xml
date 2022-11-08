@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".cardviewActivities.chattingActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7425FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7425FF">
+
+            <ImageView
+                android:id="@+id/backArrowChats"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#ffff"
+                android:src="@drawable/arrow"
+                android:layout_margin="10dp"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/debangafont"
+                android:text="LET'S CONNECT..."
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/chatSearchBtn"
+                android:layout_width="40dp"
+                android:backgroundTint="#ffff"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:src="@drawable/searchimg"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/formulaSheetTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7425FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:tabIndicator="@color/white"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#56CDFF">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Chats" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Group Discussions" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Study Status" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerChatting"
+        android:layout_width="354dp"
+        android:layout_height="488dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formulaSheetTabLayout"
+        app:layout_constraintVertical_bias="0.699" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

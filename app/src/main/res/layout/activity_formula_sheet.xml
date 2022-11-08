@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".cardviewActivities.formulaSheetActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/formulaSheetTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:tabIndicator="@color/white"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#000000">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Physics" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Chemistry" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Maths"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Biology" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/formulaSheetViewPager"
+        android:layout_width="408dp"
+        android:layout_height="582dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formulaSheetTabLayout"
+        app:layout_constraintVertical_bias="0.34" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

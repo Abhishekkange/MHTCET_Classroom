@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".navigationDrawerActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setProfileHereNavigation"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:src="@drawable/group_study"
+        app:civ_border_color="#FF000000"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        app:layout_constraintVertical_bias="0.028" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navigationUserProfile"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/profilebuttonback"
+        android:textColor="@color/white"
+        android:text="View Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/notificationNavBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/optionback"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableStart="@drawable/notification"
+        android:fontFamily="@font/debangafont"
+        android:textSize="20dp"
+        android:text="NOTIFICATION" />
+
+    <TextView
+        android:id="@+id/feedbackNavBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/optionback"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="@font/debangafont"
+        android:textSize="20dp"
+        android:text="FEEDBACK US" />
+
+    <TextView
+        android:id="@+id/aboutDeveloperNavBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/optionback"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="@font/debangafont"
+        android:textSize="20dp"
+        android:text="ABOUT FOUNDER" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/optionback"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/insta"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--           />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/tubeu"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/linkk"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_gravity="center" />-->
+
+
+
+<!--    </LinearLayout>-->
+
+
+    <TextView
+        android:id="@+id/logoutNavBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/optionback"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="@font/debangafont"
+        android:textSize="20dp"
+        android:text="LOG OUT" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/androjet"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="A Product by AndroJet"
+            android:textColor="@color/black" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

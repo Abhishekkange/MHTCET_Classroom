@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".cardviewActivities.practicePapers">
+
+
+    <TextView
+        android:id="@+id/pcmTogglepractice"
+        android:layout_width="109dp"
+        android:layout_height="44dp"
+        android:background="@drawable/pcmbackchange"
+        android:fontFamily="@font/lemonbold"
+        android:gravity="center"
+        android:text="PCM"
+        android:textSize="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/PreviousPCMFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <TextView
+        android:id="@+id/pcbTogglepractice"
+        android:layout_width="109dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/pcmback"
+        android:fontFamily="@font/lemonbold"
+        android:gravity="center"
+        android:text="PCB"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pcmTogglepractice"
+        app:layout_constraintEnd_toStartOf="@+id/pcmTogglepractice"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toEndOf="@+id/pcmToggle"
+        app:layout_constraintTop_toTopOf="@+id/pcmTogglepractice"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <FrameLayout
+        android:id="@+id/PreviousPCMFrame"
+        android:layout_width="383dp"
+        android:layout_height="618dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.721">
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

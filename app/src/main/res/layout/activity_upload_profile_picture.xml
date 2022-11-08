@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".uploadProfilePictureActivity">
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET PROFILE IMAGE"
+        android:background="#F2F2F2"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:fontFamily="@font/debangafont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setProfileHereinActivity"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:src="@drawable/girlprofileicon"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView33"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/selectImageProfilePhotoActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/setProfileHereinActivity"
+        app:layout_constraintStart_toStartOf="@+id/setProfileHereinActivity"
+        app:layout_constraintTop_toBottomOf="@+id/setProfileHereinActivity"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueBtnProfileActivity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:padding="15dp"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/selectImageProfilePhotoActivity"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/selectImageProfilePhotoActivity"
+        app:layout_constraintTop_toBottomOf="@+id/selectImageProfilePhotoActivity"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/continueBtnProfileActivity"
+        app:layout_constraintStart_toStartOf="@+id/continueBtnProfileActivity"
+        app:layout_constraintTop_toBottomOf="@+id/continueBtnProfileActivity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

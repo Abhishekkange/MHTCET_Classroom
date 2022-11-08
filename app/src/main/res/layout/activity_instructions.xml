@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".instructions">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="293dp"
+        android:layout_height="67dp"
+        android:text="Instructions"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lemonbold"
+        android:gravity="center"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="349dp"
+        android:background="@drawable/optionback"
+        android:layout_height="398dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text=" 1. There are total 150 questions.\n 2. 100 questioon for physics and chemistry and 50 \n      for mathematics\n 3.For each question you have 72 seconds  \n 4.You cannot go back to previous question \n 5. If time is over for one question then next\n    question will start \n There is no negative marging scheme.\n \n                       BEST OF LUCK !!"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="165dp"
+        android:layout_height="89dp"
+        android:background="@drawable/optionback"
+        android:backgroundTint="@android:color/transparent"
+        android:fontFamily="@font/lemonbold"
+        android:text="start Test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.778" />
+</androidx.constraintlayout.widget.ConstraintLayout>
